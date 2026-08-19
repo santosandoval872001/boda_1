@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/pagina_boda.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Boda K y U</title>
+</head>
+
+<body>
+  <!-- <div id="pantallaSobre">
+
+    <div class="sobre" onclick="abrirInvitacion()">
+
+      <div class="tapa"></div>
+
+      <div class="cuerpo"></div>
+
+      <div class="carta">
+
+        <h2>k & u</h2>
+
+        <p>Haz clic para abrir</p>
+
+      </div>
+
+      <div class="sello">
+
+        <div class="centro">k&u</div>
+
+      </div>
+
+    </div>
+
+  </div> -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="carusel">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+            <div class="carousel-inner">
+              <div class="carousel-item active rounded-5" data-bs-interval="10000">
+                <img src="img_carusel/img_c1.jpeg" class="d-block w-100 rounded-3" alt="img_c1">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="img_carusel/img_c2.jpeg" class="d-block w-100 rounded-3" alt="img_c2">
+              </div>
+              <div class="carousel-item">
+                <img src="img_carusel/img_c3.jpeg" class="d-block w-100 rounded-3" alt="img_c3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100">
+              <h1 class="display-3 fw-bold h1" style="font-family: Edwardian Script ITC;"><strong>K Y U</strong></h1>
+              <h3 class="fs-4" style="font-family: Garamond;">Ven a celebrar nuestra boda</h3>
+              <a href="#conf" class="btn btn-secondary btn-lg">Confirmacion</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 text-center">
+    <div class=" row">
+
+      <div class="col-12 col-md-4 text-center mb-1 p-1">
+        <img class="img-fluid rounded-3 w-75 escalera-1 border border-5 border-light shadow-lg" src="img/img_1.jpeg"
+          alt="" data-aos="fade-up">
+      </div>
+
+      <div class="col-12 col-md-4 text-center mt-2 p-1 mt-md-5">
+        <img class="img-fluid rounded-3 w-100 escalera-2 mt-5 border border-5 border-light shadow-lg"
+          src="img/img_3.jpeg" alt="" data-aos="fade-up">
+      </div>
+
+      <div class="col-12 col-md-4 text-center p-5 mt-1 mt-md-5">
+        <img class="img-fluid rounded-3 w-100 h-100 escalera-3 mt-5 border border-5 border-light shadow-lg"
+          src="img/img_2.jpeg" alt="" data-aos="fade-up">
+      </div>
+
+      <div class="container mt-5" data-aos="fade-right">
+        <div class="row">
+          <div class="col-12">
+            <p class="lh-1 text-light">
+              <span style=" font-family: Edwardian Script ITC;" class="display-1">S</span>orem ipsum dolor
+              sit amet consectetur adipisicing elit. Praesentium, quae officia. Dicta minima at
+              obcaecati velit officia similique, fuga veritatis
+              sed nemo reiciendis quam. Praesentium
+              mollitia at dolorem facere fuga.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt excepturi non
+            </p>
+            <p class="text-light">minus eaque ipsum natus! Cum iure porro, saepe, temporibus modi numquam optio
+              asperiores
+              necessitatibus totam deserunt quo. Voluptatem!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt excepturi non praesentium
+              minus eaque ipsum natus! Cum iure porro, saepe, temporibus modi numquam optio asperiores
+              necessitatibus totam deserunt quo. Voluptatem!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt excepturi non praesentium
+              minus eaque ipsum natus! Cum iure porro, saepe, temporibus modi numquam optio asperiores
+              necessitatibus totam deserunt quo. Voluptatem!
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <audio id="musica" autoplay>
+    <source src="musica/BTS - Dynamite.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="position-fixed bottom-0 end-0 m-4" style="z-index:1000;">
+
+    <div id="notas"></div>
+
+    <button id="btnMusica" class="btn btn-light rounded-circle shadow-lg"
+      style="width: 35px; height:35px; padding: 0 ;">
+      <i class="bi bi-music-note-beamed"></i>
+    </button>
+
+  </div>
+
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-12 text-center">
+        <img src="img/img_4.jpeg" class="w-100 rounded-3" alt="" data-aos="fade-right" data-aos-duration="2000">
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 text-light bg-dark bg-opacity-50 p-4 rounded-4" data-aos="fade-up">
+    <div class="row">
+      <div class="col">
+        <h1 style="font-family: Garamond;" class="text-center"> Programa </h1>
+        <table class="table table-borderless mi-tabla">
+          <thead>
+            <tr>
+              <th scope="col">Hora</th>
+              <th scope="col" class="text-center">Actividad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">5:00 PM</th>
+              <td class="text-center">CEREMONIA RELIOSA <br> <a href="#mapa_parroquia"
+                  class="link-light link-offset-2 link-underline-opacity-75 link-underline-opacity-100-hover">Parroquia
+                  de San Marti de Tours</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">7:30 PM</th>
+              <td class="text-center">RECEPCION <br> <a href="#mapa_islaEv"
+                  class="link-light link-offset-2 link-underline-opacity-75 link-underline-opacity-100-hover">Isla
+                  events</a></td>
+            </tr>
+            <tr>
+              <th scope="row">8:00 PM</th>
+              <td class="text-center">CENA</td>
+            </tr>
+            <tr>
+              <th scope="row">9:00 PM</th>
+              <td class="text-center">PRIMER BAILE DE NOVIOS</td>
+            </tr>
+            <tr>
+              <th scope="row">12:30 PM</th>
+              <td class="text-center">DESPEDIDA</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="text-center text-light" style="font-family: Garamond;">Parroquia de San Martin Tours</h1>
+        <iframe id="mapa_parroquia"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.684207700028!2d-103.93158472566182!3d20.437072607839564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8425de091e2cc55d%3A0x2fef7aba8f72b827!2sParroquia%20de%20San%20Mart%C3%ADn%20de%20Tours!5e0!3m2!1ses-419!2smx!4v1783827073497!5m2!1ses-419!2smx"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin" data-aos="fade-up"></iframe>
+      </div>
+    </div>
+    <div class=" row mt-5">
+      <div class="col-12 col-md-6 mt-5">
+        <img src="img/img_5parroquia.jpeg" class="w-100 mt-5 rounded-3 border border-5 border-light" alt=""
+          data-aos="fade-right">
+      </div>
+      <div class="col-12 col-md-6 mt-5 mt-md-5">
+        <img src="img/img_9parroquia.jpeg" class=" w-100 mt-5 border border-5 border-light" alt="" data-aos="fade-left">
+      </div>
+    </div>8
+  </div>
+
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <h1 class="text-center text-light mt-5" style="font-family: Garamond;">Isla Events</h1>
+        <iframe id="mapa_islaEv"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3739.090681290691!2d-103.93846162566234!3d20.42034920839887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8425ddf1ceeaa649%3A0x207c232bb5cca719!2sIsla%20Events!5e0!3m2!1ses-419!2smx!4v1783826408177!5m2!1ses-419!2smx"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin" data-aos="fade-up"></iframe>
+      </div>
+    </div>
+    <div class="row mt-5 align-items-center">
+      <div class="col-12 col-md-4 mt-5">
+        <img src="img/img_6IslaEvents.jpeg" class="w-100 mt-5 rounded-3 border border-5 border-light" alt=""
+          data-aos="fade-right">
+      </div>
+      <div class="col-12 col-md-4 mt-2">
+        <img src=" img/img_7IslaEvents.jpeg" class="w-100 mt-5 rounded-3 border border-5 border-light" alt=""
+          data-aos="fade-up">
+      </div>
+      <div class="col-12 col-md-4 mt-2">
+        <img src="img/img_8IslaEvents.jpeg" class="w-100 mt-5 rounded-3 border border-5 border-light" alt=""
+          data-aos="fade-left">
+      </div>
+    </div>
+  </div>
+
+  <div class=" container text-light mt-5" id="conf" data-aos="fade-right">
+    <div class="row">
+      <div class="col-12">
+        <h1 id="conf" class="text-center" style="font-family: Garamond;">RECEPCION</h1>
+        <h4>Confirma tu asistencia</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Deleniti odio, repellendus minus quos excepturi
+          aspernatur dolorem dolores fuga ratione nisi possimus
+          magni facere tempora perspiciatis nam cupiditate quia
+          eum cumque!</p>
+
+        <div class="accordion accordion-flush" style="font-family: Garamond;" id="accordionFlushExample">
+          <div class="accordion-item rounded-3 bg-dark">
+            <h2 class="accordion-header ">
+              <button class="accordion-button collapsed bg-dark text-light rounded rounded-3" type=" button"
+                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                aria-controls="flush-collapseOne">
+                <h3 style="font-family: Garamond;">Confirmacion</h3> &nbsp; &nbsp; <svg
+                  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                  class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+                </svg>
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse  text-light "
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body bg-dark rounded rounded-3">
+                <form id="formBoda">
+
+                  <h2>¿Asistirás a la boda?</h2>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="asistencia" id="asisteSi" value="Sí">
+                    <label class="form-check-label" for="asisteSi">
+                      Sí, asistiré
+                    </label>
+                  </div>
+
+                  <div class="form-check mb-4">
+                    <input class="form-check-input" type="radio" name="asistencia" id="asisteNo" value="No">
+                    <label class="form-check-label" for="asisteNo">
+                      No asistiré
+                    </label>
+                  </div>
+
+                  <h2>
+                    Escribe tu nombre y, si llevarás acompañante, también su nombre.
+                  </h2>
+
+                  <input type="text" id="nombre" class="form-control mb-3" placeholder="Nombre completo del invitado">
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="lleva" value="Sí" id="llevaSi">
+
+                    <label class="form-check-label" for="llevaSi">
+                      Sí, llevaré acompañante
+                    </label>
+                  </div>
+
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="lleva" value="No" id="llevaNo" checked>
+
+                    <label class="form-check-label" for="llevaNo">
+                      No llevaré acompañante
+                    </label>
+                  </div>
+
+                  <div id="contenedorAcompanante" style="display:none;">
+                    <input type="text" class="form-control" placeholder="Nombre completo del acompañante"
+                      id="nombreAcompanante">
+                    <br>
+                  </div>
+
+                  <button id="btnEnviar" type="button" class="btn btn-light text-dark" onclick="enviar()">
+
+                    Confirmar asistencia
+
+                  </button>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-light mt-5" data-aos="fade-up">
+    <div class="row mt-5">
+      <div class="col-12 col-md-6" data-aos="fade-right">
+        <h1 class="text-center mt-2" style="font-family: Garamond;">Si desean tambien pueden
+          mandarnos regalos
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eaque esse optio
+          recusandae mollitia quod illum beatae possimus repellendus ab. Alias in quia nostrum
+          atque vero totam explicabo commodi accusamus?</p> <br>
+      </div>
+      <div class="col-12 col-md-6 text-center">
+        <img src="img/img_10_rosas.jpeg" class="w-75 rounded-3 border border-5 border-light" alt=""
+          data-aos="fade-left">
+      </div>
+      <div class="col-12 text-center mt-4" data-aos="fade-up">
+        <h1>Mesa de regalos</h1>
+        <a class=" h2 link-light link-offset-2 link-underline-opacity-75 link-underline-opacity-100-hover"
+          href="">Amazon</a>
+        <img src="img/iconos/amazon.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-center mb-5 mt-2 mt-md-5">
+    <div class=" row">
+      <div class="col-12 col-md-4 mt-4 mt-md-0">
+        <img src="img/img_3.jpeg" alt="" class="rounded-3 border border-5 border-light w-100 img-fluid"
+          data-aos="flip-left">
+      </div>
+      <div class="col-12 col-md-4 mt-4 mt-md-0">
+        <img src="img/img_2.jpeg" alt="" class="rounded-3 border border-5 border-light w-100 img-fluid"
+          data-aos="zoom-in">
+      </div>
+      <div class="col-12 col-md-4 mt-4 mt-md-0 ">
+        <img src="img/img_1.jpeg" alt="" class="rounded-3 border border-5 border-light w-100 img-fluid"
+          data-aos="slide-up">
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-2 text-light bg-dark rounded-3" data-aos="fade-up">
+    <div class="row">
+      <div class="col-12 mb-2">
+        <footer>
+          <h1 class="mt-5 text-center" style="font-family: Edwardian Script ITC;">Contactame &nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-telephone-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+            </svg>
+          </h1>
+          <div class="row text-center">
+            <div class="col-12 col-md-6">
+              Celular 3751112113
+            </div>
+            <div class="col-12 col-md-6">
+              Correo santosandoval163@gmail.com <br>
+
+              <a href=""><img src="img/iconos/facebook.png" style=" width: 15%;" alt=""></a>
+              <a href=""><img src="img/iconos/insta.png" style=" width: 15%;" alt=""></a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    once: false,
+    mirror: true
+  });
+</script>
+
+<script src="jss/pagina_boda.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>
