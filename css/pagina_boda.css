@@ -98,8 +98,6 @@ body {
   color: #444 !important;
 }
 
-/* PANTALLA DE SOBRE */
-
 /* Fondo */
 
 #pantallaSobre {
@@ -205,9 +203,9 @@ body {
 
 }
 
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
 /* Tapa */
 
